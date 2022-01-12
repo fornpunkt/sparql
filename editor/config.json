@@ -1,0 +1,81 @@
+{
+    "sparql_endpoint": false,
+    "query_library_endpoint": "/queries.json",
+    "header_brand_content": "FornPunkt",
+    "demo_tour": {
+        "demo_query": "PREFIX schema: <http://schema.org/>\n\nSELECT * WHERE {\n   ?s schema:\n}",
+        "demo_query_cursor_position": {
+            "line": 3,
+            "ch": 13
+        }
+    },
+    "color_scheme": {
+        "main_brand": "#30734c",
+        "main_brand_darkened": "#214e34",
+        "secondary_brand": "#30734c",
+        "secondary_brand_darkened": "#214e34",
+        "main_text": "#3A3A3A",
+        "main_text_lighted": "#6A6A6A",
+        "secondary_text": "#FFFFFF",
+        "background": "#FFFFFF",
+        "background_shaded": "#ECEEEF",
+        "border": "#DADADA"
+    },
+    "autocomplete": {
+        "classes": [
+            "http://schema.org/CreativeWork",
+            "http://schema.org/Event",
+            "http://schema.org/Place",
+            "http://schema.org/GeoCoordinates",
+            "http://schema.org/GeoShape",
+            "http://www.w3.org/ns/oa#Annotation",
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "https://fornpunkt.se/observationstyper#fjarr",
+            "https://fornpunkt.se/observationstyper#falt",
+            "https://fornpunkt.se/observationstyper#maskin"
+        ],
+        "prefixes": [
+            "rdfs: <http://www.w3.org/2000/01/rdf-schema#>",
+            "schema: <http://schema.org/>",
+            "oa: <http://www.w3.org/ns/oa#>>",
+            "dc: <http://purl.org/dc/terms/>",
+            "as: <http://www.w3.org/ns/activitystreams#>"
+        ],
+        "properties": [
+            "http://schema.org/title",
+            "http://schema.org/text",
+            "http://schema.org/creator",
+            "http://schema.org/url",
+            "http://schema.org/keywords",
+            "http://schema.org/contentLocation",
+            "http://schema.org/geo",
+            "http://schema.org/latitude",
+            "http://schema.org/longitude",
+            "http://schema.org/event",
+            "http://schema.org/dateCreated",
+            "http://schema.org/dateModified",
+            "http://schema.org/discussionUrl",
+            "http://schema.org/provider",
+            "http://purl.org/dc/terms/creator",
+            "http://schema.org/subjectOf",
+            "http://www.w3.org/ns/oa#commenting",
+            "http://www.w3.org/ns/oa#linking",
+            "http://www.w3.org/ns/oa#motivatedBy",
+            "http://www.w3.org/ns/oa#hasTarget",
+            "http://www.w3.org/ns/oa#hasBody",
+            "http://www.w3.org/ns/activitystreams#generator",
+            "http://www.w3.org/2000/01/rdf-schema#label",
+            "http://www.w3.org/2000/01/rdf-schema#comment",
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        ],
+        "services": [
+        ],
+        "uris": [
+            "https://fornpunkt.se/",
+            "https://fornpunkt.se/observationstyper",
+            "https://fornpunkt.se/lamning/",
+            "https://fornpunkt.se/anvandare/",
+            "http://kulturarvsdata.se/raa/lamning/"
+        ]
+    }
+}
