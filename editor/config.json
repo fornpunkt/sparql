@@ -28,6 +28,7 @@
             "http://schema.org/Place",
             "http://schema.org/GeoCoordinates",
             "http://schema.org/GeoShape",
+            "http://schema.org/DefinedTerm",
             "http://www.w3.org/ns/oa#Annotation",
             "http://www.w3.org/2000/01/rdf-schema#Class",
             "https://fornpunkt.se/observationstyper#fjarr",
