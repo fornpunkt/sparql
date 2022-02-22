@@ -16,5 +16,5 @@
 <https://fornpunkt.se/observationstyper#maskin>
   a rdfs:Class ;
   rdfs:label "Maskinobservation"@sv ;
-  rdfs:comment "Observation gjord av ett dator program genom dataanalys."@sv ;
+  rdfs:comment "Observation gjord av ett datorprogram genom dataanalys."@sv ;
   rdfs:subClassOf schema:Event .
