@@ -1,0 +1,13 @@
+#title: List tags without descriptions
+#tags: tags,maintenance
+
+PREFIX schema: <http://schema.org/>
+
+SELECT * WHERE {
+  ?tag a schema:DefinedTerm ;
+       schema:name ?name .
+
+  OPTIONAL { ?tag schema:subjectOf ?wikipedia }
+
+  MINUS { ?tag schema:description [] }
+}

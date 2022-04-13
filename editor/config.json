@@ -1,6 +1,6 @@
 {
     "sparql_endpoint": false,
-    "query_library_endpoint": "/queries.json",
+    "query_library_endpoint": "/config/queries.json",
     "header_brand_content": "FornPunkt",
     "demo_tour": {
         "demo_query": "PREFIX schema: <http://schema.org/>\n\nSELECT * WHERE {\n   ?s schema:\n}",

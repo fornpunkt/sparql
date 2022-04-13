@@ -1,0 +1,9 @@
+#title: List sites with a given title
+#tags: sites
+
+PREFIX schema: <http://schema.org/>
+
+SELECT * WHERE {
+  ?site a schema:CreativeWork ;
+        schema:name 'Stensättning'@sv .
+}

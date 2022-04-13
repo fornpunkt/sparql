@@ -1,0 +1,12 @@
+#title: List users by the number of sites registered
+#tags: sites,users
+
+
+PREFIX schema: <http://schema.org/>
+
+SELECT ?creator (COUNT(?site) AS ?site_count) WHERE {
+  ?site a schema:CreativeWork ;
+        schema:creator ?creator .
+}
+GROUP BY ?creator
+ORDER BY DESC(?site_count)

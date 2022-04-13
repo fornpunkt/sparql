@@ -1,0 +1,13 @@
+#title: Distribution of observation types for a given user
+#tags: observation-types,user
+
+PREFIX schema: <http://schema.org/>
+
+SELECT ?observation_type (COUNT(?observation_type) AS ?observation_type_count) WHERE {
+  BIND('abbe'@sv AS ?user)
+  ?site schema:creator ?user ;
+        schema:event ?event .
+  ?event a ?observation_type .
+}
+GROUP BY ?observation_type
+ORDER BY DESC(?observation_type_count)

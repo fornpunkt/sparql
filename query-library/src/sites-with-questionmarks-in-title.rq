@@ -1,0 +1,11 @@
+#title: Sites with questionmarks in the title
+#tags: sites
+
+PREFIX schema: <http://schema.org/>
+
+SELECT * WHERE {
+  ?site a schema:CreativeWork ;
+       schema:name ?name .
+
+  FILTER(CONTAINS(?name, '?'))
+}

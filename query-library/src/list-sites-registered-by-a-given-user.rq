@@ -1,0 +1,10 @@
+#title: List sites registered by a given user
+#tags: sites,user
+
+PREFIX schema: <http://schema.org/>
+
+SELECT * WHERE {
+  ?site a schema:CreativeWork ;
+        schema:creator 'abbe'@sv ;
+        schema:name ?site_title .
+}

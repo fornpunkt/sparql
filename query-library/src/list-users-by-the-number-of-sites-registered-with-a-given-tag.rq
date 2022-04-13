@@ -1,0 +1,14 @@
+#title: List users by the number of sites registered with a given tag
+#tags: sites,users,tags
+
+
+PREFIX schema: <http://schema.org/>
+
+SELECT ?creator (COUNT(?site) AS ?site_count) WHERE {
+  BIND(<https://fornpunkt.se/tagg/stensattning> AS ?tag)
+  ?site schema:keywords ?tag ;
+        a schema:CreativeWork ;
+        schema:creator ?creator .
+}
+GROUP BY ?creator
+ORDER BY DESC(?site_count)

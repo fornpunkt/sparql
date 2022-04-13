@@ -1,0 +1,16 @@
+#title: List tags used together with a given tag
+#tags: tags
+
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?other_tags ?name WHERE {
+  BIND(<https://fornpunkt.se/tagg/stensattning> AS ?tag)
+  ?site schema:keywords ?tag ;
+        schema:keywords ?other_tags .
+  ?other_tags schema:name ?name .
+
+  MINUS {
+    ?tag schema:name ?origin_tag_name .
+    ?other_tags schema:name ?origin_tag_name .
+  }
+}

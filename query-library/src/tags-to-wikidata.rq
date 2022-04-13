@@ -1,0 +1,13 @@
+#title: Lists tag and their corresponding Wikidata item
+#tags: tags,wikidata
+
+PREFIX schema: <http://schema.org/>
+
+SELECT ?tag ?wikidata WHERE {
+  ?tag a schema:DefinedTerm ;
+       schema:subjectOf ?wikipedia .
+
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?wikipedia schema:about ?wikidata .
+  }
+}
