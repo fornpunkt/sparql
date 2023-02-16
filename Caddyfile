@@ -1,4 +1,6 @@
 sparql.fornpunkt.se {
+	encode gzip
+
 	@missing_user_agent header !User-Agent
 
 	handle @missing_user_agent {
