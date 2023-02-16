@@ -1,0 +1,11 @@
+#title: Get comments containing a question mark
+#tags: comments
+
+PREFIX oa: <http://www.w3.org/ns/oa#>
+
+SELECT * WHERE {
+  ?comment oa:motivatedBy oa:commenting ;
+              oa:bodyValue ?content .
+
+  FILTER(CONTAINS(?content, "?"))
+}

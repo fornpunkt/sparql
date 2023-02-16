@@ -1,0 +1,9 @@
+#title: Check if a given KMR site has comments
+#tags: kmr,comments
+
+PREFIX oa: <http://www.w3.org/ns/oa#>
+
+ASK {
+  ?annotation oa:hasTarget <http://kulturarvsdata.se/raa/lamning/504f34e4-89be-46dd-8c6f-6b466824d111> ;
+              oa:motivatedBy oa:commenting .
+}

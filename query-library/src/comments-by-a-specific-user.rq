@@ -1,0 +1,17 @@
+#title: Get comments by user
+#tags: comments,user
+
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?comment ?content WHERE {
+  ?comment a oa:Annotation ;
+           oa:motivatedBy oa:commenting ;
+           dc:creator ?creator .
+
+  ?creator foaf:name "abbe" .
+
+  ?comment oa:bodyValue ?content .
+}
+LIMIT 10

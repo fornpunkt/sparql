@@ -16,7 +16,7 @@ for filename in os.listdir('query-library/src'):
         
         queries.append(query)
 
-with open('editor/queries.json', 'w') as outfile:
+with open('thor-configuration/queries.json', 'w') as outfile:
     json.dump(queries, outfile)
 
 print('Done generating JSON')
