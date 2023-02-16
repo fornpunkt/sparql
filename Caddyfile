@@ -1,0 +1,20 @@
+sparql.fornpunkt.se {
+	handle_path /config/* {
+		root * thor-configuration
+	}
+
+	root * thor
+	file_server {
+		hide .git
+	}
+
+	handle_path /query {
+		rewrite * /fornpunkt/sparql
+		reverse_proxy http://localhost:3030
+	}
+
+	handle_path /ping {
+		rewrite * /$/ping
+		reverse_proxy http://localhost:3030
+	}
+}

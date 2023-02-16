@@ -1,5 +1,5 @@
 {
-    "sparql_endpoint": false,
+    "sparql_endpoint": "/query",
     "query_library_endpoint": "/config/queries.json",
     "header_brand_content": "FornPunkt",
     "demo_tour": {

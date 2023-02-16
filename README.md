@@ -1,10 +1,20 @@
 # FornPunkt SPARQL
 
-This repository contains various resources related to FornPunkt's SPARQL service, such as editor configuration and the public query library.
+This repository contains various resources related to FornPunkt's SPARQL service, such as editor configuration, the public query library, and Caddy server configuration.
 
 ## Setup your editor
 
-The query library and editor configuration are made for the Thor SPARQL editor and visualization interface. You can install the FornPunkt configuration by copying all files found in the `editor` directory into Thor's `config` directory.
+### Prerequisites
+
+ - Fuseki running on `localhost:3030` with a dataset named `fornpunkt`
+ - Caddy installed
+
+### Setup
+
+1. Clone this repository
+2. Update `Caddyfile` with your domain or IP address
+2. Run `caddy` from the root directory
+3. Done!
 
 ## Getting RDF
 
