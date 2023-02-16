@@ -2,13 +2,15 @@
 #tags: observation-types,users
 
 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <http://schema.org/>
 
-SELECT ?observation_type (COUNT(?observation_type) AS ?observation_type_count) WHERE {
-  BIND('abbe'@sv AS ?user)
-  ?site schema:creator ?user ;
+SELECT ?label (COUNT(?observation_type) AS ?count) WHERE {
+  ?site schema:creator "abbe"@sv ;
         schema:event ?event .
+
   ?event a ?observation_type .
+  ?observation_type rdfs:label ?label .
 }
-GROUP BY ?observation_type
+GROUP BY ?label
 ORDER BY DESC(?observation_type_count)
