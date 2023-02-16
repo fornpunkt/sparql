@@ -79,7 +79,8 @@
             "https://query.wikidata.org/bigdata/namespace/wdq/sparql",
             "http://libris.kb.se/sparql",
             "https://tora.entryscape.net/store/sparql",
-            "http://dbpedia.org/sparql"
+            "http://dbpedia.org/sparql",
+            "https://heritagedata.org/live/sparql.php"
 
         ],
         "uris": [
@@ -87,7 +88,9 @@
             "https://fornpunkt.se/observationstyper",
             "https://fornpunkt.se/lamning/",
             "https://fornpunkt.se/tagg/",
-            "http://kulturarvsdata.se/raa/lamning/"
+            "http://kulturarvsdata.se/raa/lamning/",
+            "http://purl.org/heritagedata/schemes/agl_et/concepts/145156",
+            "http://purl.org/heritagedata/schemes/agl_et/concepts/147317"
         ]
     }
 }
