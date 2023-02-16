@@ -38,7 +38,7 @@
         "prefixes": [
             "rdfs: <http://www.w3.org/2000/01/rdf-schema#>",
             "schema: <http://schema.org/>",
-            "oa: <http://www.w3.org/ns/oa#>>",
+            "oa: <http://www.w3.org/ns/oa#>",
             "dc: <http://purl.org/dc/terms/>",
             "as: <http://www.w3.org/ns/activitystreams#>"
         ],
