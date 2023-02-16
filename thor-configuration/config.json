@@ -40,23 +40,28 @@
             "schema: <http://schema.org/>",
             "oa: <http://www.w3.org/ns/oa#>",
             "dc: <http://purl.org/dc/terms/>",
-            "as: <http://www.w3.org/ns/activitystreams#>"
+            "as: <http://www.w3.org/ns/activitystreams#>",
+            "foaf: <http://xmlns.com/foaf/0.1/>"
         ],
         "properties": [
             "http://schema.org/title",
             "http://schema.org/text",
             "http://schema.org/creator",
             "http://schema.org/url",
+            "http://schema.org/identifier",
             "http://schema.org/keywords",
             "http://schema.org/contentLocation",
             "http://schema.org/geo",
             "http://schema.org/latitude",
             "http://schema.org/longitude",
+            "http://schema.org/line",
+            "http://schema.org/polygon",
             "http://schema.org/event",
             "http://schema.org/dateCreated",
             "http://schema.org/dateModified",
             "http://schema.org/discussionUrl",
             "http://schema.org/provider",
+            "http://schema.org/name",
             "http://purl.org/dc/terms/creator",
             "http://schema.org/subjectOf",
             "http://www.w3.org/ns/oa#commenting",
@@ -67,7 +72,8 @@
             "http://www.w3.org/ns/activitystreams#generator",
             "http://www.w3.org/2000/01/rdf-schema#label",
             "http://www.w3.org/2000/01/rdf-schema#comment",
-            "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+            "http://xmlns.com/foaf/0.1/name"
         ],
         "services": [
             "https://query.wikidata.org/bigdata/namespace/wdq/sparql",
