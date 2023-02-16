@@ -1,6 +1,7 @@
 #title: Render all sites with a given tag on a map
 #tags: sites,map
 
+
 PREFIX schema: <http://schema.org/>
 
 SELECT ?site ?geometry ?geometryColor ?geometryOpacity WHERE {

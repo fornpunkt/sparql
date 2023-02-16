@@ -1,6 +1,7 @@
 #title: List sites with a given title
 #tags: sites
 
+
 PREFIX schema: <http://schema.org/>
 
 SELECT * WHERE {

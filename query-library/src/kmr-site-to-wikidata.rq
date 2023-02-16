@@ -1,6 +1,7 @@
 #title: Given a KMR site get the corresponding Wikidata tag
 #tags: kmr,wikidata
 
+
 PREFIX schema: <http://schema.org/>
 PREFIX oa: <http://www.w3.org/ns/oa#>
 

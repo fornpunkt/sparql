@@ -1,6 +1,7 @@
 #title: List tags without descriptions
 #tags: tags,maintenance
 
+
 PREFIX schema: <http://schema.org/>
 
 SELECT * WHERE {

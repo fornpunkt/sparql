@@ -1,6 +1,7 @@
 #title: Get comments by user
 #tags: comments,users
 
+
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX oa: <http://www.w3.org/ns/oa#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>

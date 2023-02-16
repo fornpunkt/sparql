@@ -1,6 +1,7 @@
 #title: List sites registered by a given user
 #tags: sites,users
 
+
 PREFIX schema: <http://schema.org/>
 
 SELECT * WHERE {

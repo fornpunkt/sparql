@@ -1,6 +1,7 @@
 #title: List tags used together with a given tag
 #tags: tags
 
+
 PREFIX schema: <http://schema.org/>
 
 SELECT DISTINCT ?other_tags ?name WHERE {

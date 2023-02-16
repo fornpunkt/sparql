@@ -1,6 +1,7 @@
 #title: Distribution of observation types for a given user
 #tags: observation-types,users
 
+
 PREFIX schema: <http://schema.org/>
 
 SELECT ?observation_type (COUNT(?observation_type) AS ?observation_type_count) WHERE {
