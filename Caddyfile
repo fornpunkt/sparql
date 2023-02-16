@@ -1,4 +1,12 @@
 sparql.fornpunkt.se {
+	@missing_user_agent header !User-Agent
+
+	handle @missing_user_agent {
+	respond "The User-Agent header is is required." 403 {
+			close
+		}
+	}
+
 	handle_path /config/* {
 		root * thor-configuration
 	}
