@@ -1,0 +1,15 @@
+#title: Given a KMR site get the corresponding Wikidata tag
+#tags: kmr,wikidata
+
+PREFIX schema: <http://schema.org/>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+
+SELECT ?wikidata WHERE {
+  ?annotation oa:hasTarget <http://kulturarvsdata.se/raa/lamning/401055fc-e795-4e2c-8e34-c45dfde18e61> ;
+              oa:hasBody ?body .
+  ?body schema:subjectOf ?target .
+
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?target schema:about ?wikidata .
+  }
+}

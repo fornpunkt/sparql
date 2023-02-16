@@ -1,0 +1,24 @@
+#title: Render all sites with a given tag on a map
+#tags: sites,map
+
+PREFIX schema: <http://schema.org/>
+
+SELECT ?site ?geometry ?geometryColor ?geometryOpacity WHERE {
+  ?site schema:keywords <https://fornpunkt.se/tagg/skurvandring> ;
+        schema:contentLocation ?place .
+  ?place schema:geo ?geometry_node .
+
+  OPTIONAL {
+    ?geometry_node schema:polygon|schema:line ?geometry .
+  }
+
+  OPTIONAL {
+    ?geometry_node schema:latitude ?lat .
+    ?geometry_node schema:longitude ?lon .
+
+    BIND(CONCAT(STR(?lat), ",", STR(?lon)) AS ?geometry)
+  }
+
+  BIND("#30638E" AS ?geometryColor)
+  BIND(0.4 AS ?geometryOpacity)
+}
