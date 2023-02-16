@@ -1,0 +1,20 @@
+#title: List corresponding event types in the FISH Event Types Thesaurus
+#tags: observation-types
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT * WHERE {
+  ?observation_type rdfs:subClassOf schema:Event ;
+                    rdfs:label ?observation_type_name .
+  
+  OPTIONAL {
+    ?observation_type schema:sameAs ?fish_event_type .
+    SERVICE <https://heritagedata.org/live/sparql.php> {
+      ?fish_event_type skos:prefLabel ?fish_event_label .
+    }
+  }
+}
