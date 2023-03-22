@@ -2,6 +2,7 @@
 #tags: sites,map
 
 
+#DefaultView:Map
 PREFIX schema: <http://schema.org/>
 
 SELECT ?site ?geometry ?geometryColor ?geometryOpacity WHERE {

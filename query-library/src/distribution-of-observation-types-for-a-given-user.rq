@@ -2,6 +2,7 @@
 #tags: observation-types,users
 
 
+#DefaultView:PieChart
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <http://schema.org/>
 
