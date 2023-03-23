@@ -6,7 +6,7 @@ This repository contains various resources related to FornPunkt's SPARQL service
 
 ### Prerequisites
 
- - Fuseki running on `localhost:3030` with a dataset named `fornpunkt`
+ - Fuseki running on `localhost:3030` using the `config.ttl` configuration, with a dataset named `fornpunkt`
  - Caddy installed
 
 ### Setup
