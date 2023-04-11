@@ -2,8 +2,24 @@
 @prefix fuseki:  <http://jena.apache.org/fuseki#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+PREFIX tdb2:    <http://jena.apache.org/2016/tdb#>
 @prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+
 
 [] rdf:type fuseki:Server ;
    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "20000" ] .
+
+
+:service_tdb_all  rdf:type  fuseki:Service ;
+        rdfs:label       "TDB2 fornpunkt" ;
+        fuseki:endpoint  [ fuseki:operation  fuseki:gsp-rw ] ;
+        fuseki:endpoint  [ fuseki:name       "sparql" ;
+                           fuseki:operation  fuseki:query
+                         ] ;
+        fuseki:name      "fornpunkt" ;
+        fuseki:dataset   :tdb_dataset_readwrite .
+
+
+:tdb_dataset_readwrite
+        rdf:type       tdb2:DatasetTDB2 ;
+        tdb2:location "TBD2" .
