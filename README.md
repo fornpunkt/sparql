@@ -1,6 +1,6 @@
 # FornPunkt SPARQL
 
-This repository contains various resources related to FornPunkt's SPARQL service, such as editor configuration, the public query library, and Caddy server configuration.
+This repository contains various resources related to FornPunkt's SPARQL service, such as editor configuration, the public query library, Graph Store HTTP Protocol utilities, and Caddy server configuration.
 
 ## Setup your editor
 
@@ -16,9 +16,15 @@ This repository contains various resources related to FornPunkt's SPARQL service
 2. Run `caddy` from the root directory
 3. Done!
 
+Optionally if you want to pull data directly for FornPunkt's Export API you should also set the `FP_EXPORT_ACCESS_TOKEN` environment variable to an access token with read rights.
+
 ## Getting RDF
 
 FornPunkts RDF can be retrieved by sending an HTTP request with an `Accept: application/ld+json` header to any RDF capable URL on fornpunkt.se or by signing into FornPunkt and using the "Export" tool. <a href="https://fornpunkt.se/data/fornpunkt-json-ld-api">See the API documentation for more information.</a>
+
+## Graph Store HTTP Protocol utilities
+
+The `scripts` folder contains several Shell scripts for working with the Graph Store HTTP Protocol and FornPunkt's Export API. The scripts only dependencies are `curl` and Bash 4+.
 
 ## Adding queries to the library
 
@@ -27,6 +33,7 @@ Add a new file to the `query-library/src` directory and format your file as show
 ```
 #title: List sites with a given title
 #tags: sites
+
 
 PREFIX schema: <http://schema.org/>
 
