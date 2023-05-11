@@ -27,4 +27,13 @@ sparql.fornpunkt.se {
 		rewrite * /$/ping
 		reverse_proxy http://localhost:3030
 	}
+
+	# Redirect for security.txt, all  of .well-known is just a bonus
+	handle_path /.well-known/* {
+		redir https://fornpunkt.se{uri}
+	}
+
+	handle_path /security.txt {
+		redir https://fornpunkt.se/.well-known/security.txt
+	}
 }
