@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -A files(
+declare -A files=(
     ["lamnings.jsonld"]="https://fornpunkt.se/apis/lamnings?format=jsonld&scope=all"
     ["tags.jsonld"]="https://fornpunkt.se/apis/tags?format=jsonld"
     ["comments.jsonld"]="https://fornpunkt.se/apis/comments?format=jsonld"
