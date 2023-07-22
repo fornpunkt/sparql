@@ -5,7 +5,9 @@ declare -A files=(
     ["tags.jsonld"]="https://fornpunkt.se/apis/export/tags?format=jsonld"
     ["comments.jsonld"]="https://fornpunkt.se/apis/export/comments?format=jsonld"
     ["wikipedia-annotations.jsonld"]="https://fornpunkt.se/apis/export/wikipedia-annotations?format=jsonld"
-    ["generic-annotations.jsonld"]="https://fornpunkt.se/apis/export/generic-annotations?format=jsonld"
+    ["generic-annotations-1.jsonld"]="https://fornpunkt.se/apis/export/generic-annotations?format=jsonld"
+    ["generic-annotations-2.jsonld"]="https://fornpunkt.se/apis/export/generic-annotations?format=jsonld&page=2"
+    ["generic-annotations-3.jsonld"]="https://fornpunkt.se/apis/export/generic-annotations?format=jsonld&page=3"
     ["observation-types.jsonld"]="https://fornpunkt.se/observationstyper.jsonld"
 )
 
