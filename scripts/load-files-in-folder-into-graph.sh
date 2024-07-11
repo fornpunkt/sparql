@@ -1,4 +1,4 @@
-for file in *.json-ld; do 
+for file in *.jsonld; do 
     if [ -f "$file" ]; then 
         echo "Loading $file into graph"
         # load json-ld file into graph
