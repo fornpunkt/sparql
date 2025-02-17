@@ -15,7 +15,7 @@ sparql.fornpunkt.se {
 
 	root * thor
 	file_server {
-		hide .git
+		hide .git docs REAMDE.md .gitignore
 	}
 
 	handle_path /query {
